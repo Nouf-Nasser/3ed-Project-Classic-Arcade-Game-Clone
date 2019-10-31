@@ -1,4 +1,4 @@
-//global variables
+//Global variables
 const Width = 101; //the width of the stone
 const Height = 55; // the height of the stone
 //-------------------------------------------
