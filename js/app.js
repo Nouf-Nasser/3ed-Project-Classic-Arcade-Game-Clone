@@ -34,7 +34,7 @@ let Player = function() {
 // the Player position
   this.x = 200;
   this.y = 400;
-  this.sprite = 'images/char-cat-girl.png';
+  this.sprite = 'images/char-cat-girl.png'; //after putting this link in the load section at resources.js, its time to put it here.
 };
 //--------------------------------------
 Player.prototype.update = function(dt) {
@@ -65,8 +65,8 @@ Player.prototype.handleInput = function(keysPress) {
 //---------------------set all enemies----------------
 //multiple enemies with different movement and position
 let player = new Player();
-let firstEnemy = new Enemy(100,60,60);
-let secondEnemy = new Enemy(-100,60,30);
+let firstEnemy = new Enemy(100,60,60); //you can add as many enemies as you want 
+let secondEnemy = new Enemy(-100,60,30); //you can also put the speed you want 
 let thirdEnemy = new Enemy(-100,140,30);
 let forthEnemy = new Enemy(100,230,20);
 let fifthEnemy = new Enemy(-100,230,50);
@@ -76,7 +76,7 @@ let eightthEnemy = new Enemy(-100,140,60);
 //place them all in an array
 let allEnemies = [firstEnemy,secondEnemy,
                   thirdEnemy,forthEnemy,fifthEnemy,
-                  sixthEnemy,seventhEnemy,eightthEnemy];
+                  sixthEnemy,seventhEnemy,eightthEnemy]; //dont forget to put them in an array 
 
 //-------------------setting the keys-----------------
 document.addEventListener('keyup', function(e) {
@@ -89,3 +89,4 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+//-------done-------
